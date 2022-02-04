@@ -5,9 +5,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn import tree
+from config import DATASET_PATH
 
 # 2. Loading data file
-balance_data = pd.read_csv('E:/Projects/Machine-Deep-Learning/_my_hands_on/datasets/decision_tree_loan_repayment.csv',
+balance_data = pd.read_csv(DATASET_PATH + '/decision_tree_loan_repayment.csv',
                            sep=',', header=0)
 print("Dataset: ", balance_data.head())
 print("Dataset Length: ", len(balance_data))

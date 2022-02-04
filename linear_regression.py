@@ -3,9 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from config import DATASET_PATH
 
 # 2. Importing the dataset and Extracting the Independent and Dependent variables
-companies = pd.read_csv('E:/Projects/Machine-Deep-Learning/_my_hands_on/datasets/linear_regression_company_profit_prediction.csv')
+companies = pd.read_csv(DATASET_PATH + 'linear_regression_company_profit_prediction.csv')
 X = companies.iloc[:, :-1].values
 y = companies.iloc[:, 4].values
 
